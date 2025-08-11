@@ -1,72 +1,138 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Đăng nhập</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
     <style>
-        body {
-            background: #f0f2f5;
-            font-family: Arial, sans-serif;
+        .login-section {
+            padding: 100px 0;
+            background: url('assets/images/products-heading.jpg') center center no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .login-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
         }
         .login-container {
-            width: 350px;
-            margin: 100px auto;
-            padding: 40px 30px;
-            background: #fff;
+            background: white;
+            padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            position: relative;
         }
         .login-container h2 {
+            color: #1e1e1e;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
             text-align: center;
-            margin-bottom: 24px;
-            color: #333;
         }
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
-            width: 100%;
-            padding: 12px 10px;
-            margin: 8px 0 16px 0;
-            border: 1px solid #ccc;
+        .form-group label {
+            font-weight: 600;
+            color: #1e1e1e;
+        }
+        .form-control {
             border-radius: 4px;
-            font-size: 16px;
+            padding: 12px 15px;
+            margin-bottom: 15px;
         }
-        .login-container button {
-            width: 100%;
-            padding: 12px;
-            background: #1877f2;
+        .btn-login {
+            background-color: #f33f3f;
             color: #fff;
+            padding: 12px 30px;
             border: none;
             border-radius: 4px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.2s;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 15px;
+            transition: all 0.3s;
         }
-        .login-container button:hover {
-            background: #145db2;
+        .btn-login:hover {
+            background-color: #121212;
+            color: #fff;
         }
-        .login-container .register-link {
-            display: block;
-            text-align: right;
-            margin-top: 10px;
-            color: #1877f2;
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .register-link a {
+            color: #f33f3f;
             text-decoration: none;
-            font-size: 14px;
         }
-        .login-container .register-link:hover {
+        .register-link a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Đăng nhập</h2>
-        <form>
-            <input type="text" placeholder="Tên đăng nhập" required>
-            <input type="password" placeholder="Mật khẩu" required>
-            <button type="submit">Đăng nhập</button>
-            <a href="register.html" class="register-link">Chưa có tài khoản? Đăng ký</a>
-        </form>
-    </div>
+    <!-- Header -->
+    <header class="background-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><h2>Sixteen <em>Clothing</em></h2></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Về chúng tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="login-container">
+                        <h2>Đăng nhập</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Tên đăng nhập</label>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mật khẩu</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-login">Đăng nhập</button>
+                            <div class="register-link">
+                                <p>Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>

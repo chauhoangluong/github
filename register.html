@@ -1,132 +1,154 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Đăng ký</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
     <style>
-        body {
-            background: #f0f2f5;
-            font-family: Arial, sans-serif;
+        .register-section {
+            padding: 100px 0;
+            background: url('assets/images/products-heading.jpg') center center no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .register-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
         }
         .register-container {
-            width: 350px;
-            margin: 100px auto;
-            padding: 40px 30px;
-            background: #fff;
+            background: white;
+            padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            position: relative;
         }
         .register-container h2 {
+            color: #1e1e1e;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
             text-align: center;
-            margin-bottom: 24px;
-            color: #333;
         }
-        .register-container input[type="text"],
-        .register-container input[type="password"],
-        .register-container input[type="email"] {
-            width: 100%;
-            padding: 12px 10px;
-            margin: 8px 0 16px 0;
-            border: 1px solid #ccc;
+        .form-group label {
+            font-weight: 600;
+            color: #1e1e1e;
+        }
+        .form-control {
             border-radius: 4px;
-            font-size: 16px;
+            padding: 12px 15px;
+            margin-bottom: 15px;
         }
-        .register-container button {
-            width: 100%;
-            padding: 12px;
-            background: #1877f2;
+        .btn-register {
+            background-color: #f33f3f;
             color: #fff;
+            padding: 12px 30px;
             border: none;
             border-radius: 4px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.2s;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 15px;
+            transition: all 0.3s;
         }
-        .register-container button:hover {
-            background: #145db2;
+        .btn-register:hover {
+            background-color: #121212;
+            color: #fff;
         }
-        .register-container .login-link {
-            display: block;
-            text-align: right;
-            margin-top: 10px;
-            color: #1877f2;
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-link a {
+            color: #f33f3f;
             text-decoration: none;
-            font-size: 14px;
         }
-        .register-container .login-link:hover {
+        .login-link a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="register-container">
-        <h2>Đăng ký</h2>
-        <form>
-            <input type="text<!-- filepath: c:\github\register.html -->
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <title>Đăng ký</title>
-    <style>
-        body {
-            background: #f0f2f5;
-            font-family: Arial, sans-serif;
-        }
-        .register-container {
-            width: 350px;
-            margin: 100px auto;
-            padding: 40px 30px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .register-container h2 {
-            text-align: center;
-            margin-bottom: 24px;
-            color: #333;
-        }
-        .register-container input[type="text"],
-        .register-container input[type="password"],
-        .register-container input[type="email"] {
-            width: 100%;
-            padding: 12px 10px;
-            margin: 8px 0 16px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-        .register-container button {
-            width: 100%;
-            padding: 12px;
-            background: #1877f2;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .register-container button:hover {
-            background: #145db2;
-        }
-        .register-container .login-link {
-            display: block;
-            text-align: right;
-            margin-top: 10px;
-            color: #1877f2;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .register-container .login-link:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="register-container">
-        <h2>Đăng ký</h2>
-        <form>
-            <input type="text
+    <!-- Header -->
+    <header class="background-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><h2>Sixteen <em>Clothing</em></h2></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Về chúng tôi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Register Section -->
+    <section class="register-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="register-container">
+                        <h2>Đăng ký</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="fullname">Họ và tên</label>
+                                <input type="text" class="form-control" id="fullname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">Tên đăng nhập</label>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mật khẩu</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm-password">Xác nhận mật khẩu</label>
+                                <input type="password" class="form-control" id="confirm-password" required>
+                            </div>
+                            <button type="submit" class="btn btn-register">Đăng ký</button>
+                            <div class="login-link">
+                                <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
